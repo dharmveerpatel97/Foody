@@ -1,0 +1,76 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Expo
+.expo/
+.expo-shared/
+.expo-dev/
+
+# Metro / React Native
+dist/
+web-build/
+*.bundle
+*.map
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+*.gz
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/gradlew
+android/gradlew.bat
+android/gradle-wrapper.jar
+android/gradle-wrapper.properties
+android/gradle/
+*.apk
+*.aar
+*.dex
+*.class
+*.keystore
+*.jks
+*.so
+android/.cxx/          # C++ native build artifacts
+
+# iOS
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/*.xcworkspace
+ios/Podfile.lock
+ios/*.xcodeproj/project.xcworkspace/
+*.xcuserstate
+*.xcuserdata
+*.xcshareddata/
+
+# Environment
+.env
+.env.*.local
+
+# Temporary / cache
+.tmp/
+coverage/
+.expo/cache/
