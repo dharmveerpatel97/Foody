@@ -4,7 +4,7 @@ import { resetAndNavigate } from 'src/utils/NavigationUtils'
 
 export default function SplashScreen() {
   useEffect(() => {
-    resetAndNavigate('BottomTabs')
+    resetAndNavigate('Login')
   }, [])
   return (
     <View>

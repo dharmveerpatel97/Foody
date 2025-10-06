@@ -54,6 +54,12 @@ export const defaultTheme = {
     lg: SF(16),
     xl: SF(24),
   },
+  padding: {
+    sm: SF(5),
+    md: SF(8),
+    lg: SF(16),
+    xl: SF(24),
+  },
 
   border: {
     xs: 8,
@@ -63,6 +69,12 @@ export const defaultTheme = {
     xl: 25,
     full: 200,
   },
+  borderRadius: {
+    sm: SF(4),
+    md: SF(8),
+    lg: SF(16),
+    xl: SF(24),
+  },
 
   size: {
     SW,
@@ -71,4 +83,9 @@ export const defaultTheme = {
     heightPercent,
     widthPercent,
   },
+  SW,
+  SH,
+  SF,
+  heightPercent,
+  widthPercent,
 } as const;

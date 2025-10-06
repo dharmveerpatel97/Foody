@@ -6,9 +6,8 @@ export const screenWidth = Dimensions.get('screen').width
 export const isBannerHeight = screenHeight * 0.4
 
 export const Colors = {
-    primary: '#EF6F1E',
+    primary: '#ff751f',
     primary_light: '#EF4F5F',
-    text: '#222',
     active_light:'#ECFAF1',
     secondary: '#2D2D2D',
     tertiary: '#F4F4F2',
@@ -18,7 +17,18 @@ export const Colors = {
     lightText: '#9197A6',
     active: '#019A51',
     dark: '#18171C',
-    inactiveTab:'#B3B3B3'
+    inactiveTab:'#B3B3B3',
+    placeHolderColor:'##9a897d',
+    textInputBorderColor:'#eeede8',
+    text:'rgba(24,7,0)',
+    l1:'#bf392a',
+    l2:'rgba(211,80,48)',
+    l3:'#ff751f',
+    errorText:'#f50000',
+    white:'#ffffff',
+    gradientColor:[
+        '#bf392a','#ff751f'
+    ]
 }
 
 export enum Fonts {

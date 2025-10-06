@@ -6,14 +6,14 @@ import { Text, TouchableOpacity, View } from "react-native";
 import Animated, { useAnimatedStyle, withTiming } from "react-native-reanimated";
 import { screenWidth } from "@utils/theme/constants";
 import { tabStyle } from "src/styles";
-import { useTheme } from "src/utils";
 import { CustomText } from "src/component";
 import { Ionicons } from "@expo/vector-icons"; // ✅ Expo icons
 import TabIcons from "./TabIcons";
+import { useThemeContext } from "@utils";
 export const CustomTabs: React.FC<BottomTabBarProps> = ({ state, navigation }) => {
   const { scrollY } = useShareState();
   const bottom = useSafeAreaInsets();
-  const theme = useTheme();
+  const theme = useThemeContext();
 
   // Generate styles with theme
   const styles = useMemo(() => tabStyle(theme), [theme]);
