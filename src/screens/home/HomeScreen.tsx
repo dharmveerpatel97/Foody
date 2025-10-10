@@ -1,10 +1,11 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-
+import {  Text } from 'react-native'
+import { Container, HomeSearch } from 'src/component'
+import MainList from './MainList'
 export default function HomeScreen() {
   return (
-    <View>
-      <Text>home screen</Text>
-    </View>
+    <Container fullScreen={false}>
+      <HomeSearch />
+      <MainList />
+    </Container>
   )
 }

@@ -32,15 +32,18 @@ export default function LoginScreen() {
                 placeholder='Password'
                 rightIcon={imagePath.eye_open}
                 errortext=""
+                secureTextEntry
                 onChangeText={(val) => { console.log(val) }}
               />
               <CustomTextInput
                 leftIcon={imagePath.lock}
                 rightIcon={imagePath.eye_open}
                 placeholder='Confirm Password'
+                secureTextEntry
                 errortext=""
                 onChangeText={(val) => { console.log(val) }}
               />
+              
               <View style={{ marginVertical: 40 }} />
               <CustomButton
                 title="Continue"

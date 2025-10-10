@@ -13,6 +13,7 @@ export const Colors = {
     tertiary: '#F4F4F2',
     background: '#fff',
     background_light:'#F4F6FC',
+    white:"#ffffff",
     border: '#E5E9EF',
     lightText: '#9197A6',
     active: '#019A51',
@@ -25,7 +26,6 @@ export const Colors = {
     l2:'rgba(211,80,48)',
     l3:'#ff751f',
     errorText:'#f50000',
-    white:'#ffffff',
     gradientColor:[
         '#bf392a','#ff751f'
     ]
