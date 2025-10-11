@@ -16,8 +16,8 @@ const Container: React.FC<ContainerProps> = ({
   children,
   fullScreen = false,
   paddingHorizontal = 16,
-  backgroundColor = '#FFFFFF',
-  statusBarColor = '#FFFFFF',
+  backgroundColor = '#f7f7f7',
+  statusBarColor = '#f7f7f7',
   barStyle = 'dark-content',
   style,
 }) => {

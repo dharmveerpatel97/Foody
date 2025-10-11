@@ -3,7 +3,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 import { BOTTOM_TAB_HEIGHT } from "@utils/theme/constants";
 import { ThemeType } from "@utils/theme/ThemeContext";
 
-const CustomTextInputStyles = (theme: ThemeType,isDisabled:boolean) => {
+const CustomTextInputStyles = (theme: ThemeType,isDisabled:boolean,withBackground="transparent") => {
     const { colors, fonts, size, SF, fontSize, margins } = theme;
     return StyleSheet.create({
         container: {
@@ -20,6 +20,7 @@ const CustomTextInputStyles = (theme: ThemeType,isDisabled:boolean) => {
             alignItems: "center",
             // alignItems: multiline ? "flex-start" : "center",
             borderWidth: 1,
+            
             // borderColor:
             //     status === "error"
             //         ? Colors.red
@@ -30,8 +31,7 @@ const CustomTextInputStyles = (theme: ThemeType,isDisabled:boolean) => {
             borderRadius: size.SF(10),
             paddingHorizontal: size.SF(10),
             paddingVertical: margins.sm,
-            backgroundColor: "transparent",
-            // backgroundColor: withBackground ? Colors.white : "transparent",
+            backgroundColor: withBackground ? colors.white : "transparent",
             opacity: isDisabled ? 0.6 : 1,
         },
         inputStyle: {

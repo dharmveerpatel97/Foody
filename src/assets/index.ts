@@ -6,4 +6,11 @@ export const imagePath:any = {
     eye_close: require('./icons/hidden.png'),
     search_icon: require('./icons/search_icon.png'),
     login_watermark: require('./images/login_watermark.jpg'),
+    breakfast: require('./icons/breakfast.png'),
+    lunch: require('./icons/meal.png'),
+    dinner: require('./icons/dinner.png'),
+    dessert: require('./icons/dessert.png'),
+    snack: require('./icons/snaks.png'),
+    drinks: require('./icons/drink.png'),
+    dietary: require('./icons/dietary.png'),
 }

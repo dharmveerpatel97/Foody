@@ -13,11 +13,12 @@ interface CustomTextInputProps extends TextInputProps {
   errortext?: string,
   keyboardType?: KeyboardTypeOptions,
   maxLength?: number | undefined;
-  marginTop?: number | undefined
+  marginTop?: number | undefined;
+  withBackground?: string;
 }
-export default function CustomTextInput({ marginTop = 15, placeholder = '', secureTextEntry = false, value, onChangeText, leftIcon, rightIcon, onRightIconPress, isEditable = true, errortext, keyboardType = "default", maxLength }: CustomTextInputProps) {
+export default function CustomTextInput({ marginTop = 15, placeholder = '', secureTextEntry = false, value, onChangeText, leftIcon, rightIcon, onRightIconPress, isEditable = true, errortext, keyboardType = "default", maxLength, withBackground='' }: CustomTextInputProps) {
   const theme = useThemeContext();
-  const styles = CustomTextInputStyles(theme, !isEditable);
+  const styles = CustomTextInputStyles(theme, !isEditable, withBackground);
   return (
     <View style={[styles.container, { marginTop }]}>
       <View style={styles.inputContainer}>

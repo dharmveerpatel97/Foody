@@ -1,34 +1,34 @@
 import { View, Text, StatusBar, SectionList, StyleSheet } from 'react-native'
 import React from 'react'
 import { HomeListTitle } from 'src/component';
+import CategoryList from './CategoryList';
 const DATA = [
     {
-        title: 'Main dishes',
-        data: ['Pizza', 'Burger', 'Risotto'],
+        title: 'Category',
+        data: [{}],
+        renderItem: () => <CategoryList />,
     },
     {
-        title: 'Sides',
-        data: ['French Fries', 'Onion Rings', 'Fried Shrimps'],
+        title: 'Recomanded',
+        renderItem: () => <CategoryList />,
+        data: [{}],
     },
     {
-        title: 'Drinks',
-        data: ['Water', 'Coke', 'Beer'],
+        title: 'Recipe Of The Week',
+        data: [{}],
+        renderItem: () => <CategoryList />,
     },
-    {
-        title: 'Desserts',
-        data: ['Cheese Cake', 'Ice Cream'],
-    },
+
 ];
 export default function MainList() {
     return (
         <View>
             <SectionList
                 sections={DATA}
-                keyExtractor={(item, index) => item + index}
-                renderItem={({ item }) => (
-                    <View style={styles.item}>
-                        <Text style={styles.title}>{item}</Text>
-                    </View>
+                contentContainerStyle={{ paddingTop: 10 }}
+                keyExtractor={(_, index) => index?.toString()}
+                renderItem={({ item }: any) => (
+                    item.renderItem()
                 )}
                 renderSectionHeader={({ section: { title } }) => (
                     <HomeListTitle title={title} />)

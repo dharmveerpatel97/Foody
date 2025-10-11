@@ -11,7 +11,7 @@ export const Colors = {
     active_light:'#ECFAF1',
     secondary: '#2D2D2D',
     tertiary: '#F4F4F2',
-    background: '#fff',
+    background:"#f7f7f7",
     background_light:'#F4F6FC',
     white:"#ffffff",
     border: '#E5E9EF',
